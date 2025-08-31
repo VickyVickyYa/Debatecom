@@ -1,15 +1,37 @@
 body {
-  background: rgb(239, 228, 214);
+  background: rgb(255, 237, 214);
 }
 .container {
 
-        background: rgb(116, 25, 4);
-        width: 300px;
-        height: 150px;
-       
+         position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
       }
 
-      body {
+      #clicker {
+  background-color: rgb(109, 10, 10);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position:absolute; top: 20px; left: 10%;
+  
+
+}
+
+button {
+    font-family: comic sans ms; 
+  color: brown;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+  body {
       display:flex;
       justify-content: center;
       align-items: center;
