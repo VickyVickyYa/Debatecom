@@ -1,28 +1,56 @@
+
+
+
+
 body {
-  background: rgb(255, 237, 214);
+  background-image: url("deb1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 .container {
 
-         position: relative;
+        
        display: flex;
        justify-content: center;
        align-items: center;
       }
 
       #clicker {
-  background-color: rgb(109, 10, 10);
-  color: white;
+  background-color: rgb(119, 7, 46);
+  color: rgb(251, 205, 165);
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 8px; 
+  width: 80px; 
   position:absolute; top: 20px; left: 10%;
+  font-family: 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+.aboutcon { 
+  position: absolute;
+  top: 20px;
+  left: 10%;
   
-
 }
 
-button {
-    font-family: comic sans ms; 
-  color: brown;
-    font-size: 20px;
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top:100%;
+  left: 20%;
+  transform: translate(-50%);
+  z-index: 1;
+   margin-top: 10px;
+}
+
+.tooltip .dogimg {width: 300px;
+height: auto; 
+display: block; }
+
+.aboutcon:hover .tooltip {
+  visibility: visible;
 }
 
 
@@ -30,11 +58,3 @@ button {
 
 
 
-
-  body {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      height:100vh;
-      margin: 0;
-      }
