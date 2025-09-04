@@ -1,31 +1,19 @@
 
 
+ 
 
 
-body {
-  background-image: url("deb1.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
-.container {
-
-        
-       display: flex;
-       justify-content: center;
-       align-items: center;
-      }
 
       #clicker {
-  background-color: rgb(119, 7, 46);
-  color: rgb(251, 205, 165);
+  background-color: rgb(3, 100, 37);
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
-  border-radius: 8px; 
   width: 80px; 
   position:absolute; top: 20px; left: 10%;
   font-family: 'Trebuchet MS', sans-serif;
   cursor: pointer;
+  box-shadow: greenyellow 0px  6px 12px ;
+  border-color: aliceblue;
 }
 
 .aboutcon { 
@@ -52,6 +40,19 @@ display: block; }
 .aboutcon:hover .tooltip {
   visibility: visible;
 }
+
+.start{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: 1px rgb(81, 176, 81);
+  border: 1px solid cornflowerblue;
+  margin-left: center;
+top: 55px;
+left: 51px;
+
+} 
+
 
 
 
