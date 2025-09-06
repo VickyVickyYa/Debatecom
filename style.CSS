@@ -2,9 +2,10 @@
 
  
 
-.whole {
+body {
   height: 100vh; 
-background-image: -webkit-linear-gradient(90deg,rgba(42, 123, 155, 1) 8%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 84%); 
+background-image: radial-gradient( rgb(228, 233, 133),rgb(10, 156, 105),rgb(10, 101, 158) );
+
 
 }
 
