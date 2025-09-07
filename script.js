@@ -7,3 +7,7 @@ document.addEventListener("click", function () {
 }, { once: true }); 
 
 <debatecom.html onclick ="window.location.href='debatecom.html'">  debatecom  </debatecom.html>
+
+
+
+

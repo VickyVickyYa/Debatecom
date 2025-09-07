@@ -5,11 +5,21 @@
 body {
   
 background-image: radial-gradient( rgb(228, 233, 133),rgb(10, 156, 105),rgb(10, 101, 158) );
-display: flex;
-justify-content: content;
+
+
+
 
 }
  
+.asimovian-regular {
+  text-align: center;
+  margin: 0;
+ font-family: "Asimovian", sans-serif;
+  font-weight: 380;
+  font-style: normal;
+  color:aliceblue;
+  font-size:  50px;;
+}
 
 
 
@@ -21,18 +31,18 @@ justify-content: content;
   color: rgb(255, 255, 255);
   padding:  20px;
   width: 100px; 
-  position:absolute; 
+  
   top: 20px;
  left: 10%;
   font-family: 'Trebuchet MS', sans-serif;
-  box-shadow: greenyellow 0px  6px 12px ;
+  box-shadow: rgb(248, 255, 236) 0px  6px 12px ;
   border: none;
   border-radius: 5px;
   border: 1px solid var(--border-1);
       }
 
 .aboutcon { 
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 10%;
   
@@ -55,15 +65,15 @@ display: block; }
 .aboutcon:hover .tooltip {
   visibility: visible;
 }
-
 .starry {
         position: relative;
         width: 200px;
         height: 100px;
-        background-color: rgb(48, 215, 107);
+        z-index: 2;
+        background-color: rgb(24, 211, 118);
         border: 1px solid rgb(154, 192, 175);
         border-radius: 5%;
-        box-shadow:  greenyellow 0px  20px 30px ;
+        box-shadow:  rgb(217, 221, 217) 0px  10px 10px ;
         text-wrap: wrap;
 font-size: 45px;
 font-weight: bold;
@@ -74,10 +84,11 @@ color:aliceblue;
       
 
 
-      .container{display:flex;
+      .container {display:flex;
       justify-content:center;
        align-items:center;
        height: 100vh;
+       position: relative;
 }
 
       
@@ -111,11 +122,6 @@ height: 200%;
 padding-top: 300% }
 
 
- .glass { width: 500px;
-height: 60vh;
-background-color: transparent;
- backdrop-filter: blur(10px);
-background-size:30px ;
-border:5px solid;
-margin-top: auto;
-z-index: 1; }
+
+
+
