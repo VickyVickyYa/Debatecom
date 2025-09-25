@@ -1,0 +1,30 @@
+.bin {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(218, 228, 125);
+  box-shadow: 15 15 15 15px rgb(218, 228, 125);
+}
+
+.bin:hover {
+  cursor: pointer;
+  animation: bounceOut 0.4s linear;
+}
+
+@keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 4px rgb(218, 228, 125);
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 1px rgb(218, 228, 125);
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 7px rgb(218, 228, 125);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgb(218, 228, 125);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=com.css.map */
