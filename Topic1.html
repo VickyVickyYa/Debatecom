@@ -6,7 +6,9 @@
     href="https://fonts.googleapis.com/css2?family=Asimovian&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet"
   />
-  <h1>Bottled Water Should Be Banned</h1>
+  <h1>Bottled Water Should Be Banned 
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+</h1>
 
   <style>
     body {
@@ -28,6 +30,7 @@
       background-size: 500% 500%;
       height: 100vh;
       justify-content: center;
+      flex-direction: colunm;
     }
 
     @keyframes gradient {
@@ -44,11 +47,15 @@
 
     .wrapper {
       display: flex;
-      width: 500px;
-      height: 400px;
+      width: 100%;
+      height: 250px;
+      max-width: 1200px;
       background: rgb(17, 66, 130);
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0 0 20px rgba(35, 62, 173, 0.1);
+      overflow: hidden;
+       box-shadow: inset 0 0 0 200px rgba(231, 229, 229, 0.2);
+  filter: blur(0.005px);
     }
 
     .chatside {
@@ -60,25 +67,104 @@
 
 
 
+#user, #debby{
+flex:1;
+overflow-y:auto;
+padding-bottom: 10px;
 
+}
+
+.mess{padding:10px 15px;
+border-radius: 15px;
+margin-bottom: 10px;
+max-width: 70%;
+word-wrap:break-word;}
+
+.user-mess {background-color: blue;
+align-self:flex-start;}
+
+.debby-mess {background-color: green;
+  align-self:flex-start;
+  border:right;} 
+
+
+
+.input-container  {display:flex;
+margin: top 10px;
+width:95%;
+margin: bottom 20px;
+max-width: 1200px;}
+
+.input-container input {
+  flex:1;
+padding: 20px;
+font-size: 18px;
+border-radius: 10px 0 0 10px;
+border: none;
+outline: none;
+width: 50%;
+
+}
+
+.input-container button{
+  padding: 20px 30px;
+border-radius: 0 15px 15px 0;
+font-size: 18px; 
+border:none;
+background-color: lightskyblue;
+
+cursor:pointer;
+
+}
+
+.debbycon {flex:2;
+padding: 20px;
+overflow-y: auto;
+color: orange; }
+
+.sprite { flex: 1;
+display: flex; 
+align-items: center; 
+justify-content: center;  
+background: lightblue;}
+
+
+.sprite img { max-width: 100%;
+max-height: auto; }
 
   </style>
 
-  (Debby's side)
-  <div class="wrapper">
-
-  <div class="Chatside">
-    <div id="Debby"></div>
-    <div class="sprite"></div>
-  </div>
+  
 
 
 User's side 
-<div class = "chatside"></div>
-<div id="User"></div>
-<div class="container"></div>
-<input type = "text" id="put" placeholder="Type opposing Arguement "></input>
-<button id ="but">Send</button>
-</div>
-</div>
-</body>
+<div class = "chatside">   
+    <div id="User"></div>
+
+
+
+    <div class="input-container">
+<input type = "text" id="user-input" placeholder="Type opposing Arguement ">
+<button id ="send-btn">𝙂𝙊</button>
+         </div>
+
+
+
+
+(Debby's side)
+ <div>  <div class="wrapper">
+
+  <div class="debbycon">
+    <div id="Debby"></div>
+    <div class="sprite"></div>  </div>
+
+ 
+ 
+ Sprite place
+    <div class="sprite">
+<img scr =smth alt="Debby sprite">
+
+    </div>
+ 
+
+  </body>
