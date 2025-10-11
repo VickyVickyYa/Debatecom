@@ -22,15 +22,23 @@ sendBtn.addEventListener("click", () => {
 });
 
 
-function getDebbyReply(message){
-    const reply = `Debby says: ${message}`;
-    addMessage(debbychat, reply, 'debby-mess');
+async function getDebbyReply(message) {
+    try {
+        const response = await fetch("http://localhost:5000/api/debby", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+        const reply = data.reply || "Uhm what ?";
+
+        addMessage(debbychat, reply, "debby-mess");
+    } catch (error) {
+        console.error("Error talking to debby: ", error);
+        addMessage(debbychat, "Error talking to debby: " + error, "debby-mess");
+        addMessage(debbychat, "Error:Debby lost connection.", "debby-mess");
+   }
 }
-
-
-}
-);
-
-
-
-
+});
+    
