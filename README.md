@@ -1,2 +1,6 @@
 # Debatecom
-I will find one 
+I designed the project using the basic HTML, CSS, and JavaScript. Pre-development of the front-end was done without relying on Canva which was feedback to try design languages.  In Debatecome every design, gradient background, custom font, buttons was made by CSS. This was a very good experience of learning how to style, make the page responsive and create a nice look and easy to use interface. The chat interface allows the user to type in a statement, press the send button and have Debby respond, keeping her sprite on the screen to provide a lively and interactive experience.
+
+On the back-end I was experimenting with Node.js and Express to answer API calls. I experimented with an AI API, e.g. OpenRouter, so Debby should have smartly responded. There were also troubles with the free API did not work saying failed to fetch, it took a long time trying to fix at the end I asked chat gpt that also did not work literally working on this feature gave me a  neutral to negative  experience with JavaScript, fetch requests, CORS, and also combining front-end and back-end systems but I did learn about how Java worked which I am happy about. 
+
+This project was for my school Debate Club. Free AI API did not go well, yet the undertaking demonstrates that I have grasped the principles of web development, the front-end styling, and the dynamics of interfaces. 
